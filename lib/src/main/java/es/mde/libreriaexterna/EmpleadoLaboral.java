@@ -1,25 +1,13 @@
 package es.mde.libreriaexterna;
 
-public class EmpleadoLaboral extends EmpleadoBaseImpl {
+public interface EmpleadoLaboral {
 
-	private TipoEmpleado tipoEmpleado;
-	private int tag;
-	
-	public EmpleadoLaboral() {
-		super();
-	}
-	
-	public TipoEmpleado getTipoEmpleado() {
-		return tipoEmpleado;
-	}
-	public void setTipoEmpleado(TipoEmpleado tipoEmpleado) {
-		this.tipoEmpleado = tipoEmpleado;
-	}
-	public int getTag() {
-		return tag;
-	}
-	public void setTag(int tag) {
-		this.tag = tag;
-	}
-	
+	TipoEmpleado getTipoEmpleado();
+
+	void setTipoEmpleado(TipoEmpleado tipoEmpleado);
+
+	int getTag();
+
+	void setTag(int tag);
+
 }
