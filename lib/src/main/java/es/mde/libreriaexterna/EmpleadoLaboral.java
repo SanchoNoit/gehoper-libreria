@@ -1,4 +1,4 @@
-package es.mde;
+package es.mde.libreriaexterna;
 
 public class EmpleadoLaboral extends EmpleadoBaseImpl {
 

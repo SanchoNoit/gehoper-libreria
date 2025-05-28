@@ -1,4 +1,4 @@
-package es.mde;
+package es.mde.libreriaexterna;
 
 import java.time.Duration;
 import java.time.LocalDate;

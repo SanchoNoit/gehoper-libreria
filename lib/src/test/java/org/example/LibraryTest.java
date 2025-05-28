@@ -5,10 +5,10 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
-import es.mde.Asignacion;
-import es.mde.EmpleadoBaseImpl;
-import es.mde.TipoRegular;
-import es.mde.TurnoRegular;
+import es.mde.libreriaexterna.Asignacion;
+import es.mde.libreriaexterna.EmpleadoBaseImpl;
+import es.mde.libreriaexterna.TipoRegular;
+import es.mde.libreriaexterna.TurnoRegular;
 
 import static org.junit.jupiter.api.Assertions.*;
 
