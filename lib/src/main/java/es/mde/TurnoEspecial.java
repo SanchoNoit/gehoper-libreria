@@ -4,7 +4,7 @@ import java.time.DayOfWeek;
 import java.time.LocalTime;
 import java.util.Set;
 
-public class TurnoEspecial extends TurnoBase {
+public class TurnoEspecial extends TurnoBaseImpl {
 
 	private TipoEspecial tipoEspecial;
 	private Set<DayOfWeek> diasNoPermitidos;

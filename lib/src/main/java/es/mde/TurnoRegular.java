@@ -1,6 +1,6 @@
 package es.mde;
 
-public class TurnoRegular extends TurnoBase {
+public class TurnoRegular extends TurnoBaseImpl {
 
 	private TipoRegular tipoRegular;
 	

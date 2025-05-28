@@ -2,7 +2,7 @@ package es.mde;
 
 import java.time.LocalDate;
 
-public class EmpleadoPracticas extends EmpleadoBase {
+public class EmpleadoPracticas extends EmpleadoBaseImpl {
 	
 	private LocalDate fechaInicioPracticas;
 	private LocalDate fechaFinalPracticas;

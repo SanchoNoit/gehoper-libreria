@@ -1,6 +1,6 @@
 package es.mde;
 
-public class EmpleadoLaboral extends EmpleadoBase {
+public class EmpleadoLaboral extends EmpleadoBaseImpl {
 
 	private TipoEmpleado tipoEmpleado;
 	private int tag;

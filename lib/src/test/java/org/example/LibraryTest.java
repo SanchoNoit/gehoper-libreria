@@ -6,7 +6,7 @@ package org.example;
 import org.junit.jupiter.api.Test;
 
 import es.mde.Asignacion;
-import es.mde.EmpleadoBase;
+import es.mde.EmpleadoBaseImpl;
 import es.mde.TipoRegular;
 import es.mde.TurnoRegular;
 
@@ -32,7 +32,7 @@ class LibraryTest {
         asignacion2.setFecha(LocalDate.of(2025, 3, 14));
         asignacion2.setTurno(turno);
 		
-        EmpleadoBase empleadoBase = new EmpleadoBase() {};
+        EmpleadoBaseImpl empleadoBase = new EmpleadoBaseImpl() {};
 		empleadoBase.setNombre("Ricardo Rodriguez Ramírez");
 		empleadoBase.setActivo(true);
 		empleadoBase.getAsignaciones().add(asignacion1);
