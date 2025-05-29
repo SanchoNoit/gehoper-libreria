@@ -1,8 +1,5 @@
 package es.mde.libreriaexterna;
 
-import java.time.LocalDate;
-import java.util.List;
-
 public interface Empleado {
 
 	String getNombre();
@@ -12,11 +9,5 @@ public interface Empleado {
 	boolean isActivo();
 
 	void setActivo(boolean activo);
-
-	List<Asignacion> getAsignaciones();
-
-	void setAsignaciones(List<Asignacion> asignaciones);
-
-	String generarReporte(LocalDate fechaInicioReporte, LocalDate fechaFinalReporte);
 
 }

@@ -2,7 +2,7 @@ package es.mde.libreriaexterna;
 
 import java.time.LocalTime;
 
-public abstract class TurnoBaseImpl implements Turno {
+public class TurnoBaseImpl implements Turno {
 
 	private String nombre;
 	private LocalTime horaInicio;

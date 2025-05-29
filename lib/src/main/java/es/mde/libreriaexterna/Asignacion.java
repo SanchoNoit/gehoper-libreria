@@ -5,7 +5,6 @@ import java.time.LocalDate;
 public class Asignacion {
 
 	private LocalDate fecha;
-	private Turno turno;
 	
 	public Asignacion() {}
 	
@@ -15,12 +14,5 @@ public class Asignacion {
 	public void setFecha(LocalDate fechaYHora) {
 		this.fecha = fechaYHora;
 	}
-	public Turno getTurno() {
-		return turno;
-	}
-	public void setTurno(Turno turno) {
-		this.turno = turno;
-	}
-	
-	
+
 }

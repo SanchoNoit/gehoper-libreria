@@ -16,30 +16,30 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 class LibraryTest {
-    @Test void generarReporteDevuelveHorasCorrectas() {
- 
-    	TurnoRegular turno = new TurnoRegular();
-    	turno.setActivo(true);
-    	turno.setHoraInicio(LocalTime.of(10, 00));
-    	turno.setHoraFin(LocalTime.of(16, 00));
-    	turno.setNombre("Turno de mañana");
-    	turno.setTipoRegular(TipoRegular.MANANA);
-    	
-        Asignacion asignacion1 = new Asignacion();
-        asignacion1.setFecha(LocalDate.of(2025, 3, 12));
-        asignacion1.setTurno(turno);
-        Asignacion asignacion2 = new Asignacion();
-        asignacion2.setFecha(LocalDate.of(2025, 3, 14));
-        asignacion2.setTurno(turno);
-		
-        EmpleadoBaseImpl empleadoBase = new EmpleadoBaseImpl() {};
-		empleadoBase.setNombre("Ricardo Rodriguez Ramírez");
-		empleadoBase.setActivo(true);
-		empleadoBase.getAsignaciones().add(asignacion1);
-		empleadoBase.getAsignaciones().add(asignacion2);
-		
-        assertEquals(empleadoBase.generarReporte(LocalDate.of(2025, 3, 12), LocalDate.of(2025, 3, 15)), "En el periodo solicitado se han trabajado 12 horas");
-        assertEquals(empleadoBase.generarReporte(LocalDate.of(2025, 3, 12), LocalDate.of(2025, 3, 14)), "En el periodo solicitado se han trabajado 12 horas");
-        assertEquals(empleadoBase.generarReporte(LocalDate.of(2025, 3, 12), LocalDate.of(2025, 3, 13)), "En el periodo solicitado se han trabajado 6 horas");
-    }
+//    @Test void generarReporteDevuelveHorasCorrectas() {
+// 
+//    	TurnoRegular turno = new TurnoRegular();
+//    	turno.setActivo(true);
+//    	turno.setHoraInicio(LocalTime.of(10, 00));
+//    	turno.setHoraFin(LocalTime.of(16, 00));
+//    	turno.setNombre("Turno de mañana");
+//    	turno.setTipoRegular(TipoRegular.MANANA);
+//    	
+//        Asignacion asignacion1 = new Asignacion();
+//        asignacion1.setFecha(LocalDate.of(2025, 3, 12));
+//        asignacion1.setTurno(turno);
+//        Asignacion asignacion2 = new Asignacion();
+//        asignacion2.setFecha(LocalDate.of(2025, 3, 14));
+//        asignacion2.setTurno(turno);
+//		
+//        EmpleadoBaseImpl empleadoBase = new EmpleadoBaseImpl() {};
+//		empleadoBase.setNombre("Ricardo Rodriguez Ramírez");
+//		empleadoBase.setActivo(true);
+//		empleadoBase.getAsignaciones().add(asignacion1);
+//		empleadoBase.getAsignaciones().add(asignacion2);
+//		
+//        assertEquals(empleadoBase.generarReporte(LocalDate.of(2025, 3, 12), LocalDate.of(2025, 3, 15)), "En el periodo solicitado se han trabajado 12 horas");
+//        assertEquals(empleadoBase.generarReporte(LocalDate.of(2025, 3, 12), LocalDate.of(2025, 3, 14)), "En el periodo solicitado se han trabajado 12 horas");
+//        assertEquals(empleadoBase.generarReporte(LocalDate.of(2025, 3, 12), LocalDate.of(2025, 3, 13)), "En el periodo solicitado se han trabajado 6 horas");
+//    }
 }
