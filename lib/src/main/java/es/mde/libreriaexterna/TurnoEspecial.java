@@ -1,59 +1,29 @@
 package es.mde.libreriaexterna;
 
 import java.time.DayOfWeek;
-import java.time.LocalTime;
+import java.time.LocalDate;
 import java.util.Set;
 
-public class TurnoEspecial extends TurnoBaseImpl {
+public interface TurnoEspecial {
 
-	private TipoEspecial tipoEspecial;
-	private Set<DayOfWeek> diasNoPermitidos;
-	private boolean asociadoPracticas;
-	private LocalTime horaInicio;
-	private LocalTime horaFinal;
-	
-	public TurnoEspecial() {
-		super();
-	}
+	TipoEspecial getTipoEspecial();
 
-	public TipoEspecial getTipoEspecial() {
-		return tipoEspecial;
-	}
+	void setTipoEspecial(TipoEspecial tipoEspecial);
 
-	public void setTipoEspecial(TipoEspecial tipoEspecial) {
-		this.tipoEspecial = tipoEspecial;
-	}
+	Set<DayOfWeek> getDiasNoPermitidos();
 
-	public Set<DayOfWeek> getDiasNoPermitidos() {
-		return diasNoPermitidos;
-	}
+	void setDiasNoPermitidos(Set<DayOfWeek> diasNoPermitidos);
 
-	public void setDiasNoPermitidos(Set<DayOfWeek> diasNoPermitidos) {
-		this.diasNoPermitidos = diasNoPermitidos;
-	}
+	boolean isAsociadoPracticas();
 
-	public boolean isAsociadoPracticas() {
-		return asociadoPracticas;
-	}
+	void setAsociadoPracticas(boolean asociadoPracticas);
 
-	public void setAsociadoPracticas(boolean asociadoPracticas) {
-		this.asociadoPracticas = asociadoPracticas;
-	}
+	LocalDate getFechaInicio();
 
-	public LocalTime getHoraInicio() {
-		return horaInicio;
-	}
+	void setFechaInicio(LocalDate fechaInicio);
 
-	public void setHoraInicio(LocalTime horaInicio) {
-		this.horaInicio = horaInicio;
-	}
+	LocalDate getFechaFinal();
 
-	public LocalTime getHoraFinal() {
-		return horaFinal;
-	}
+	void setFechaFinal(LocalDate fechaFinal);
 
-	public void setHoraFinal(LocalTime horaFinal) {
-		this.horaFinal = horaFinal;
-	}
-	
 }

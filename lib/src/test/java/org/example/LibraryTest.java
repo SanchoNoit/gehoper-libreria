@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import es.mde.libreriaexterna.Asignacion;
 import es.mde.libreriaexterna.EmpleadoBaseImpl;
 import es.mde.libreriaexterna.TipoRegular;
-import es.mde.libreriaexterna.TurnoRegular;
+import es.mde.libreriaexterna.TurnoRegularImpl;
 
 import static org.junit.jupiter.api.Assertions.*;
 

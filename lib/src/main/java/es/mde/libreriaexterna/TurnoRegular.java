@@ -1,20 +1,9 @@
 package es.mde.libreriaexterna;
 
-public class TurnoRegular extends TurnoBaseImpl {
+public interface TurnoRegular {
 
-	private TipoRegular tipoRegular;
-	
-	public TurnoRegular() {
-		super();
-	}
+	TipoRegular getTipoRegular();
 
-	public TipoRegular getTipoRegular() {
-		return tipoRegular;
-	}
+	void setTipoRegular(TipoRegular tipoRegular);
 
-	public void setTipoRegular(TipoRegular tipoRegular) {
-		this.tipoRegular = tipoRegular;
-	}
-	
-	
 }
